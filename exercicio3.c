@@ -26,11 +26,13 @@ int main(void){							//motor direito = OUT_C, esquerdo = OUT_B
 		{
 			OnFwdSync(OUT_C, 40);
 			Wait(SEC_2);
+			Off (OUT_C);
 		}
 		else
 		{
 			OnFwdReg(OUT_B, 40);
 			Wait(SEC_2);
+			Off (OUT_B);
 		}
 	}
 
