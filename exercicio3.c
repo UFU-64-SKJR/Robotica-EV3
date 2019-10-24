@@ -12,7 +12,7 @@
 #include <ev3.h>
 
 int main(void){							//motor direito = OUT_C, esquerdo = OUT_B
-	init ev3();
+	InitEV3();
 
 	int numero, i;
 
@@ -35,6 +35,6 @@ int main(void){							//motor direito = OUT_C, esquerdo = OUT_B
 	}
 
 
-    free ev3();
+    freeEV3();
     return 0;
 }
