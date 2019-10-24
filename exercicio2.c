@@ -11,7 +11,7 @@
 #include <ev3.h>
 
 int main(void){
-    init ev3();
+    InitEV3();
 
     while(ButtonIsDown(BTNDOWN) != 1)
     {
@@ -23,6 +23,6 @@ int main(void){
     	Off (OUT_C);
     }
 
-    free ev3();
+    freeEV3();
     return 0;
 }
