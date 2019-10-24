@@ -3,6 +3,6 @@
 
 ## 📦 Dependências
 
-| Nome  |
-| ------------- |
-| [C4EV3](https://github.com/c4ev3/)  |
+| Nome  | Uso no projeto |
+| ------------- | ------------- | 
+| [C4EV3](https://github.com/c4ev3/) | Possibilita programar na linguagem C para o EV3 |
