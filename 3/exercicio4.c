@@ -18,18 +18,18 @@ int main(void)
 		Wait(SEC_2);
 		
 		if(i%2==0){
-			OnFwdReg(OUT_AC,25);
+			OnFwdReg(OUT_A,25);
 			Wait(MS_700);
 		}
 		if(i%2!=0){
-			OnRevReg(OUT_AC, 25);
+			OnRevReg(OUT_C, 25);
 			Wait(MS_700);
 		}
 	}
 	 Off(OUT_A);
-	 OnFwdReg(OUT_B,30);
+	 OnFwdReg(OUT_C,30);
 	 Wait(SEC_4);
-	 Off(OUT_B);
+	 Off(OUT_C);
 	
 	
 
