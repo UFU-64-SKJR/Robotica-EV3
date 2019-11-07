@@ -19,8 +19,8 @@ int main(void) {
 			int initAxis;
 			initAxis = readSensor(IN_1);
 
-			OnFwrReg(OUT_A, motorSpeedA);
-			OnFwrReg(OUT_C, motorSpeedC);
+			OnFwdReg(OUT_A, motorSpeedA);
+			OnFwdReg(OUT_C, motorSpeedC);
 			while(initAxis != readSensor(IN_1)) {
 				int actualAxis = readSensor(IN_1);
 				if(initAxis > actualAxis){
