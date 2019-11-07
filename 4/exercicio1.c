@@ -17,7 +17,7 @@ int main(void) {
 
 		if(touch == 0) {
 			while(ButtonIsDown(BTNDOWN) == 0){ // Botão do brick não pressionado
-				OnFwrReg(OUT_AC, 25);
+				OnFwdReg(OUT_AC, 25);
 				if(readSensor(IN_1) == 1) {
 					OnRevReg(OUT_AC, 25);
 					Wait(500);
@@ -33,7 +33,7 @@ int main(void) {
 
 		if(ultrasonic == 0) {
 			while(ButtonIsDown(BTNDOWN) == 0){ // Botão do brick não pressionado
-				OnFwrReg(OUT_AC, 25);
+				OnFwdReg(OUT_AC, 25);
 				if(500 >= readSensor(IN_1)) {
 					Off(OUT_AC);
 					while (500 >= readSensor(IN_1)) {
