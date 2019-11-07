@@ -12,7 +12,7 @@ int main(void) {
 
 	int sensor = 1; // 0 = Toque, 1 = Ultrassonico
 
-	if(sensor == 1) {
+	if(sensor == 0) {
 		int touch = setAllSensorMode(TOUCH_PRESS, NO_SEN, NO_SEN, NO_SEN);
 
 		if(touch == 0) {
